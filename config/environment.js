@@ -2,6 +2,10 @@
 
 module.exports = function(environment) {
   var ENV = {
+    DS: {
+      host: 'https://game-store-api.herokuapp.com',
+      namespace: 'api',
+    },
     modulePrefix: 'game-store',
     environment: environment,
     baseURL: '/',
