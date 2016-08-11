@@ -2,11 +2,13 @@ import Ember from 'ember';
 import config from './config/environment';
 
 const Router = Ember.Router.extend({
-  location: config.locationType
+  location: config.locationType,
 });
 
-Router.map(function() {
-  this.route('game-store', function() {
+Router.map(function () {
+  this.route('game-store', {
+    path: '/',
+  }, function () {
     this.route('register');
     this.route('login');
   });
